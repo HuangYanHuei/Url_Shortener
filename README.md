@@ -4,6 +4,12 @@
 
 將長長的網址縮成短短的「短網址產生器」
 
+## 專案畫面
+
+![image](https://github.com/HuangYanHuei/Url_Shortener/blob/main/public/img/1.png?raw=true)
+
+![image](https://github.com/HuangYanHuei/Url_Shortener/blob/main/public/img/2.png?raw=true)
+
 ## 功能
 
 - 輸入網址轉換成短網址
