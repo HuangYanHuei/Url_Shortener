@@ -28,17 +28,17 @@
 
 4. 安裝完畢後，設定環境變數連線 MongoDB
 
-```
-MONGODB_URI=mongodb+srv://<Your MongoDB Account>:<Your MongoDB Password>@cluster0.xxxx.xxxx.net/<Your MongoDB Table><?retryWrites=true&w=majority
-```
+    ```
+    MONGODB_URI=mongodb+srv://<Your MongoDB Account>:<Your MongoDB Password>@cluster0.xxxx.xxxx.net/<Your MongoDB Table><?retryWrites=true&w=majority
+    ```
 
-4. 安裝完畢後，繼續輸入：
+5. 安裝完畢後，繼續輸入：
 
    ```bash
    npm run dev
    ```
 
-5. 若看見此行訊息則代表順利運行，打開瀏覽器進入到以下網址
+6. 若看見此行訊息則代表順利運行，打開瀏覽器進入到以下網址
 
    ```bash
    Listening on http://localhost:3000
