@@ -1,0 +1,19 @@
+<div class="result">
+  <h4 class="mb-5 mt-3">成功轉換</h4>
+  <h5>原始URL : {{longURL}}</h5>
+  <h5 class="d-inline">短網址：</h5>
+  <h5 class="d-inline" id="short_URL" value="{{shortURL}}">{{shortURL}}</h5>
+</div>
+<button class="btn btn-warning mb-5 mt-5" onclick="copyURL()" id="copyURL">Copy 短網址</button>
+<a href="/" id="backHome" class="btn btn-success">回首頁</a>
+
+<script>
+  function copyURL() {
+    let short_URL = document.querySelector('#short_URL')
+    let changeColor = document.querySelector('#copyURL')
+    navigator.clipboard.writeText(short_URL.innerText)
+      .then(() => {
+        changeColor.innerText = '已複製'
+      })
+  }
+</script>

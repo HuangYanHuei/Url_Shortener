@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="input-group">
+    <form action="/Url_Shortener" method="POST">
+      <input class="form-control input-area" type="url" placeholder="輸入url ..." name="longURL" id="shortenURL_input">
+      <div id="liveAlertPlaceholder"></div>
+      <button class="btn btn-outline-primary shorten mt-4 d-grid col-6 mx-auto" type="submit" id="shortenURL_botton"
+        onclick="input_botton()">轉換</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  function input_botton() {
+    let inputValue = document.querySelector('#shortenURL_input').value
+    if (inputValue === '')
+      alert('請勿輸入空字串')
+  }
+</script>
