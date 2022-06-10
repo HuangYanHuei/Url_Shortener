@@ -31,14 +31,19 @@
     ```
     MONGODB_URI=mongodb+srv://<Your MongoDB Account>:<Your MongoDB Password>@cluster0.xxxx.xxxx.net/<Your MongoDB Table><?retryWrites=true&w=majority
     ```
+5. 安裝 nodemon 套件
 
-5. 安裝完畢後，繼續輸入：
+    ```
+    npm install -g nodemon
+    ```
+
+6. 安裝完畢後，繼續輸入：
 
    ```bash
    npm run dev
    ```
 
-6. 若看見此行訊息則代表順利運行，打開瀏覽器進入到以下網址
+7. 若看見此行訊息則代表順利運行，打開瀏覽器進入到以下網址
 
    ```bash
    Listening on http://localhost:3000
