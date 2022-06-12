@@ -15,12 +15,11 @@ router.get('/:shorten_URL', (req, res) => {
     .then(data => {
       if (!data) {
         res.render('error')
-          .catch(error => console.error(error))
       } else {
         res.redirect(data.longURL)
-          .catch(error => console.error(error))
       }
     })
+    .catch(error => console.error(error))
 })
 
 
@@ -35,7 +34,6 @@ router.post('/Url_Shortener', (req, res) => {
           .then(() => {
             res.render('copy',
               { shortURL: shortenURL, longURL: req.body.longURL })
-              .catch(error => console.log(error))
           })
       }
       else {
@@ -43,9 +41,9 @@ router.post('/Url_Shortener', (req, res) => {
           longURL: data.longURL,
           shortURL: data.shortURL
         })
-          .catch(error => console.log(error))
       }
     })
+    .catch(error => console.log(error))
 })
 
 module.exports = router
